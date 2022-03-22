@@ -5,6 +5,9 @@
 Tässä pitäisi olla normaalia tekstiä, mutta **tämä teksti on lihavoitua**
 *Tämä teksti on puolestaan kursivoitua* 
 
+Tämän tekstin lisään puolestaan kohdassa/tehtävässä 16
+
+
 ## Viikko 1
 
 [gitlog.txt](https://github.com/Vilivanh/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
