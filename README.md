@@ -7,6 +7,7 @@ Tässä pitäisi olla normaalia tekstiä, mutta **tämä teksti on lihavoitua**
 
 Tämän tekstin lisään puolestaan kohdassa/tehtävässä 16
 
+Tehtävää 17 varten muutos
 
 ## Viikko 1
 
