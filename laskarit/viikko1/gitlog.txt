@@ -115,3 +115,6 @@ Date:   Tue Mar 22 11:47:07 2022 +0200
 
  tiedosto.txt | 0
  1 file changed, 0 insertions(+), 0 deletions(-)
+ 
+ 
+ Pieni paikallinen muutos tähän tehtävää 17 varten
