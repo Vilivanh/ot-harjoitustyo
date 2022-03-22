@@ -1,0 +1,117 @@
+admin@DESKTOP-TKVKQMH MINGW64 ~/ot_viikko1/tiedostoja (master)
+$ git log --stat | cat
+commit 8adfa4328dee1c72f0b3ca83db1459b7d3211c4f
+Author: Vili Vanhala <vili.vanhala@helsinki.fi>
+Date:   Tue Mar 22 15:18:15 2022 +0200
+
+    lisää muutoksia
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 2edd3cc24b61322a4d8d2f7da681c73e1a4ce533
+Author: Vili Vanhala <vili.vanhala@helsinki.fi>
+Date:   Tue Mar 22 15:10:31 2022 +0200
+
+    "viesti"
+
+    "viesti"
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 96c51cf5ffbf6728f74c45f38169deb537c0b4c2
+Author: Vili Vanhala <vili.vanhala@helsinki.fi>
+Date:   Tue Mar 22 14:50:19 2022 +0200
+
+    lisäyksiä ja poistoja ekaan ja kolmanteen
+
+ eka.txt    | 7 +++----
+ kolmas.txt | 5 ++++-
+ 2 files changed, 7 insertions(+), 5 deletions(-)
+
+commit 8939dadf11b2d33c62d8943cf57cc52a7b451825
+Author: Vili Vanhala <vili.vanhala@helsinki.fi>
+Date:   Tue Mar 22 14:32:23 2022 +0200
+
+    nimimuutos
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 2d88ec2e16ef92fd6d21a1819681770c1d1bb162
+Author: Vili Vanhala <vili.vanhala@helsinki.fi>
+Date:   Tue Mar 22 14:31:21 2022 +0200
+
+    poisto
+
+ toinen.txt | 3 ---
+ 1 file changed, 3 deletions(-)
+
+commit 9d6b2276690d7130df4f720fb54dc56f2db01f2c
+Author: Vili Vanhala <vili.vanhala@helsinki.fi>
+Date:   Tue Mar 22 14:20:32 2022 +0200
+
+    uusia muutoksia
+
+ tiedosto.txt | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+
+commit 9d9269a572dd87fb77290c28bb0fdcf2871fe685
+Author: Vili Vanhala <vili.vanhala@helsinki.fi>
+Date:   Tue Mar 22 14:16:46 2022 +0200
+
+    liitetty tekstiä
+
+ tiedosto.txt | 23 ++++++++++++++++++++++-
+ 1 file changed, 22 insertions(+), 1 deletion(-)
+
+commit 6e44e52377d6584d1dcb1d91f6ae8d70a863aeee
+Author: Vili Vanhala <vili.vanhala@helsinki.fi>
+Date:   Tue Mar 22 13:56:42 2022 +0200
+
+    muutoksia
+
+ kolmas.txt | 3 +++
+ toinen.txt | 3 +++
+ 2 files changed, 6 insertions(+)
+
+commit 0f34a71a6570ce16f04fb6ac2fa8def1040107c9
+Author: Vili Vanhala <vili.vanhala@helsinki.fi>
+Date:   Tue Mar 22 13:54:40 2022 +0200
+
+    päivityksiä
+
+ stuff/erikoistiedosto.txt | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 538c52377ab35e3a8e1213fc6bb67e2fd71f1399
+Author: Vili Vanhala <vili.vanhala@helsinki.fi>
+Date:   Tue Mar 22 13:31:18 2022 +0200
+
+    kolmas tiedosto lisätty
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit c138f7a08964390f400615f2b2673154ac7c22e2
+Author: Vili Vanhala <vili.vanhala@helsinki.fi>
+Date:   Tue Mar 22 13:21:25 2022 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 73e43016d6b112f96e0cefc3217f16e900844d18
+Author: Vili Vanhala <vili.vanhala@helsinki.fi>
+Date:   Tue Mar 22 11:47:07 2022 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
