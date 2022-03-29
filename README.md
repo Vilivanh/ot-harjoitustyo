@@ -20,8 +20,8 @@ Tehtävää 17 varten muutos
 
 ### Määrittelydokumentti
 
-Määrittelydokumentin löytää täältä: (https://github.com/Vilivanh/ot-harjoitustyo/blob/master/maarittelydokumentti.md)
+Määrittelydokumentin löytää täältä: (https://github.com/Vilivanh/ot-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)
 
 ### Tuntikirjanpito
 
-Tuntikirjanpito on tässä: https://github.com/Vilivanh/ot-harjoitustyo/blob/master/tuntikirjanpito.md
+Tuntikirjanpito on tässä: (https://github.com/Vilivanh/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
