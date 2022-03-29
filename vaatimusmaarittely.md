@@ -14,7 +14,8 @@ Alkuun sovelluksella on vain yksi käyttäjä, mutta tarkoitus on luoda mahdolli
 
 ### Jatkokehitysideat
 
--menojen luokittelu
--aktiivinen seuranta budjetin toteutumiseen
-
+ - menojen luokittelu
+ - aktiivinen seuranta budjetin toteutumiseen
+ - palaute budjetin onnistumisesta (suunnitellut vs. toteutuneet menot)
+ - mahdollisesti grafiikkaa näihin liittyen?
 
