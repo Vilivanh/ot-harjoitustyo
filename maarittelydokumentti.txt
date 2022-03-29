@@ -1,4 +1,4 @@
-##Sovelluksen tarkoitus
+# Sovelluksen tarkoitus
 
 Sovelluksen tarkoituksena on toimia budjetointisovelluksena käyttäjän määrittämälle ajanjaksolle
 
@@ -8,9 +8,9 @@ Alkuun sovelluksella on vain yksi käyttäjä, mutta tarkoitus on luoda mahdolli
 
 ### Toiminnallisuudet
 
--Käytettävissä olevan rahan alkumäärä
--suunnitellut menot
--päivittäinen kirjanpito menoista
+ - Käytettävissä olevan rahan alkumäärä
+ - suunnitellut menot
+ - päivittäinen kirjanpito menoista
 
 ### Jatkokehitysideat
 
