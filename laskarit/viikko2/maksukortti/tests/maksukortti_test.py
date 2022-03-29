@@ -10,4 +10,4 @@ class TestMaksukortti(unittest.TestCase):
 
         vastaus = str(kortti)
 
-        self.assertEqual(vastaus, "Kortilla on rahaa 10 euroa")
+        self.assertEqual(vastaus, "Kortilla on rahaa 9 euroa")
