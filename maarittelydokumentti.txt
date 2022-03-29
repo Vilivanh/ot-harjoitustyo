@@ -1,4 +1,4 @@
-## Sovelluksen tarkoitus
+##Sovelluksen tarkoitus
 
 Sovelluksen tarkoituksena on toimia budjetointisovelluksena käyttäjän määrittämälle ajanjaksolle
 
