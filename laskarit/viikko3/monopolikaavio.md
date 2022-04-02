@@ -17,5 +17,9 @@
       }
       Pelilauta "1" --> "*" Aloitusruutu
       Pelilauta "1" --> "*" Vankila
+      Pelilauta "4 kappaletta" --> Asemat
+      Pelilauta "4 kappaletta" --> Laitokset
+      Pelilauta "useita" --> Sattuma ja yhteismaa
+      Pelilauta "useita" --> Katu
       
 ```
