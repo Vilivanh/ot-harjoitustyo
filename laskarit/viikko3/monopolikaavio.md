@@ -3,17 +3,17 @@
       Pelaaja "*" --> "1" Pelinappula
 
       class Pelaaja{
-          
+      Rahat    
       }
       class Ruutu{
-          sijainti
+          
           tyyppi
       }
       class Noppa{
           id
       }
       class Pelilauta{
-          ruutu
+          Ruutu
       }
       Pelilauta "1" --> "*" Aloitusruutu
       Pelilauta "1" --> "*" Vankila
