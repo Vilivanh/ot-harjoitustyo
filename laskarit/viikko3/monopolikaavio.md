@@ -6,8 +6,8 @@
           
       }
       class Ruutu{
-          id
-          content
+          sijainti
+          tyyppi
       }
       class Noppa{
           id
@@ -15,4 +15,7 @@
       class Pelilauta{
           ruutu
       }
+      Pelilauta "1" --> "*" Aloitusruutu
+      Pelilauta "1" --> "*" Vankila
+      
 ```
