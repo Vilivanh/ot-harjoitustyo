@@ -1,3 +1,10 @@
+
+sequenceDiagram
+    Alice->>John: Hello John, how are you?
+    activate John
+    John-->>Alice: Great!
+    deactivate John
+
 sequenceDiagram
     participant O as Outside
     participant M as Machine
