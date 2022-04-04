@@ -1,4 +1,4 @@
-'''mermaid
+```mermaid
  sequenceDiagram
       participant O as Outside
       participant M as Machine
@@ -29,4 +29,4 @@
       E->>F: consume(10)
       D->>E: is_running()
       E->>D: False
-'''
+```
