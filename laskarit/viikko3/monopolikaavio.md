@@ -21,5 +21,5 @@
       Pelilauta "4 kappaletta" --> Laitokset
       Pelilauta "useita" --> Sattuma ja yhteismaa
       Pelilauta "useita" --> Katu
-      
+      Pelinappula --> Pelilauta
 ```
