@@ -25,14 +25,14 @@
       Omistaja
       Toiminto
       }
-      Class Sattuma ja yhteismaa{
+      class Sattuma ja yhteismaa{
       Toiminto
       }
-      Class Asemat{
+      class Asemat{
       Toiminto
       Omistaja
       }
-      Class Laitokset{
+      class Laitokset{
       Toiminto
       Omistaja
       }
