@@ -1,0 +1,16 @@
+from tkinter import Tk, ttk
+
+class UI:
+    def __init__(self, root):
+        self.root = root
+    def start(self):
+        label = ttk.Label(master = self.root, text = "Hello world!")
+        label.pack()
+
+window = Tk()
+window.title("Bugdet app")
+
+ui = UI(window)
+ui.start()
+
+window.mainloop()
