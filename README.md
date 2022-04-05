@@ -5,7 +5,7 @@ Budjetointisovellus on kehittämisvaiheessa. Tällä hetkellä aloitettu pienimu
 
 ### Määrittelydokumentti
 
-Määrittelydokumentin löytää täältä: (https://github.com/Vilivanh/ot-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)
+Määrittelydokumentin löytää täältä: (https://github.com/Vilivanh/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 ### Tuntikirjanpito
 
