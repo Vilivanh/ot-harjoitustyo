@@ -16,10 +16,10 @@ class Budgeting:
         self._income += income
 
     def add_outcome(self, outcome):
-        self._outcome -= outcome
+        self._outcome += outcome
 
     def calculate(self):
-        self._money = self._initial_sum + self._income - self._outcome
+        self._money = self._initial_sum + self._income + self._outcome
         self._days = self._length
         self._daily_sum = self._money/self._days
         return self._daily_sum
