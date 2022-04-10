@@ -6,9 +6,9 @@ Päivämäärä   Aika   Mitä tein
 
 5.4.2022     3h     Graafisen käyttöjärjestelmän ja siihen liittyvän logiikan rakentamista
 
-6.4.2022     5h     Graafisen käyttöjärjestelmän kehittämistä-
+6.4.2022     5h     Graafisen käyttöjärjestelmän kehittämistä, sen toiminnan testailua ja yrityksiä sisäistää asian toiminta.
 
-10.4.2022    3h     Vähän testiä, repositorion siivousta. 
+10.4.2022    3h     Vähän testiä, repositorion siivousta, alustavia toimenpiteitä tietokannan luomiseen.
 
 Yhteensä      14h
 
