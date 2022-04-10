@@ -4,4 +4,11 @@ Päivämäärä   Aika   Mitä tein
 
 29.3.2022    1h     Määrittelydokumentin luominen, tuntikirjanpidon luominen 
 
-Off-topic: tiedän tässä kohtaa että kakkosviikko jäi vajaaksi, kun tehtävät meni vain seitsemänteen asti kunnialla; olen ollut kipeänä torstaista asti, enkä vieläkään täysin kunnossa, mutta jatkan paremmalla tarmolla viikon 3 kanssa ja pyrin ottamaan kakkosviikon tehtävät kiinni. Ymmärrän, että täysiä pisteitä tehtävistä ei tule, mutta toivon, että saan kuitenkin jatkaa kurssilla. 
+5.4.2022     3h     Graafisen käyttöjärjestelmän ja siihen liittyvän logiikan rakentamista
+
+6.4.2022     5h     Graafisen käyttöjärjestelmän kehittämistä-
+
+10.4.2022    3h     Vähän testiä, repositorion siivousta. 
+
+Yhteensä      14h
+
