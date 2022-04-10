@@ -22,6 +22,14 @@ class TestBudget(unittest.TestCase):
         self.budget.add_outcome(1000)
         self.assertEqual(str(self.budget), "Daily amount: 100.0")
 
+    def test_adding_multiple_outcome(self):
+        self.budget.create_budget("Test User", 20, 3000)
+        self.budget.add_outcome(400)
+        self.budget.add_outcome(100)
+        self.budget.add_outcome(600)
+        self.budget.add_outcome(400)
+        self.assertEqual(str(self.budget), "Daily amount: 75.0")
+
     def test_adding_outcome_and_income(self):
         self.budget.create_budget("Test User", 20, 3000)
         self.budget.add_outcome(1000)
