@@ -32,15 +32,21 @@ Käyttöliittymän näkymät ovat seuraavat:
 ```mermaid
  classDiagram
       Budget "*" --> "1" User
+      Budget --> BudgetPlan
       class User{
           username
           password
       }
       class Budget{
+          Name
           Startind date
           End date
-          Planned incomes
-          Planned Outcomes
+          Initial sum
+      }
+      class BudgetPlan{
+          Date
+          Sum
+          Income or outcome
       }
 ```
 
