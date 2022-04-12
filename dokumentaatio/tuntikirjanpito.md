@@ -10,5 +10,7 @@ Päivämäärä   Aika   Mitä tein
 
 10.4.2022    3h     Vähän testiä, repositorion siivousta, alustavia toimenpiteitä tietokannan luomiseen.
 
-Yhteensä      14h
+12.4.2022    5h     Käytetty aikaa lähinnä sovelluksen toiminnan kehittämiseen (arkkitehtuurin muotoilu asetti tähän inspiraation)
+
+Yhteensä      19h
 
