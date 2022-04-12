@@ -54,8 +54,9 @@ Käyttöliittymän näkymät ovat seuraavat:
 
 ## Tietojen tallennus
 
-Repositories-pakkauksella on kaksi luokkaa: BudgetRepository ja UserRepository. 
+Repositories-pakkauksella on kaksi luokkaa: BudgetRepository (joka pitää sisällään tiedot budjeteista) ja UserRepository (joka pitää sisällään tiedot käyttäjistä). 
 Molemmat luokat tallentavat tiedostot SQLite-tietokantaan. 
+Tulossa on vielä kolmas luokka, joka tallentaa budjettien yksityiskohdat. Tämä luokka luo jokaiselle budjetille oman tietokannan, josta haetaan ko. budjetin yksityiskohdat.  
 
 ## Päätoiminnallisuudet
 
