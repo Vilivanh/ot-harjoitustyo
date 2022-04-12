@@ -33,6 +33,8 @@ Käyttöliittymän näkymät ovat seuraavat:
  classDiagram
       Budget "*" --> "1" User
       Budget --> BudgetPlan
+      User --> "can have many" Budget
+      BudgetPlan "1" -->  "effects" Budget
       class User{
           username
           password
