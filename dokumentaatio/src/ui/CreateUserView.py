@@ -32,7 +32,12 @@ class CreateUserView:
         password_entry_value = self.password_entry.get()
         password_entry2_value = self.password_entry2.get()
         if password_entry_value != password_entry2_value:
-            print("Error! Wrong password")
+            print("Error! Passwords don't match")
+            window2 = Tk()
+            window2.title("Bugdet app")
+            label2 = ttk.Label(master = self._root, text = "Error! Passwords don't match")
+            label2.grid(row = 0, column = 0, columnspan = 1)
+            window2.mainloop()
         else:
             print(f"Username is: {username_entry_value}")
             print(f"Password is: {password_entry_value}")

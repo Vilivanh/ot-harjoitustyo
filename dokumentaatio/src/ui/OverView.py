@@ -10,7 +10,7 @@ class OverView:
         self._frame = ttk.Frame(master = self._root)
         label = ttk.Label(master = self._frame, text = "Home")
         budgets_button = ttk.Button(master=self._root, text="Show Budgets", command=self._handle_button_click)
-        create_button = ttk.Button(master=self._root, text="Create New Budget", command=self._handle_button_click)
+        create_button = ttk.Button(master=self._root, text="Create New Budget", command=self._create_button_click)
         exit_button = ttk.Button(master=self._root, text="Exit", command=self._exit_button_click)
         label.grid(row = 0, column = 0, columnspan = 1)
 
@@ -21,6 +21,9 @@ class OverView:
         self._root.grid_columnconfigure(1, weight=1, minsize=100)
 
     def _exit_button_click(self):
+        self._root.destroy()
+
+    def _create_button_click(self):
         self._root.destroy()
 
     def _handle_button_click(self):
