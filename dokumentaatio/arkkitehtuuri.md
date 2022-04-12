@@ -10,19 +10,19 @@ Sovellus mukailee referenssinä olevan Todo-appin rakennetta, koska allekirjoitt
  classDiagram
       UI-->>Services
       class UI{
-      Views    
+          Views    
       }
       class Services{
-      functionalities   
+          functionalities   
       }
       Services-->>Repositories
       class Repositories{
-      
+          data
       }
       Services-->>Entities
       Repositories-->>Entities
       class Entities{
-      
+          user and budget
       }
 ```
 
