@@ -1,4 +1,7 @@
 from tkinter import ttk, Tk, constants
+from repositories.UserRepository import UserRepository
+from entities.user import User
+
 
 class CreateUserView:
     def __init__(self, root):
@@ -33,14 +36,18 @@ class CreateUserView:
         password_entry2_value = self.password_entry2.get()
         if password_entry_value != password_entry2_value:
             print("Error! Passwords don't match")
-            window2 = Tk()
-            window2.title("Bugdet app")
+            
             label2 = ttk.Label(master = self._root, text = "Error! Passwords don't match")
             label2.grid(row = 0, column = 0, columnspan = 1)
-            window2.mainloop()
+            
         else:
             print(f"Username is: {username_entry_value}")
             print(f"Password is: {password_entry_value}")
+            username = username_entry_value
+            password = password_entry_value
+            user = self._UserRepository.create(User(username, password))
+            return user
+
 
 
 window = Tk()

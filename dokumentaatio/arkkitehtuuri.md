@@ -2,6 +2,31 @@
 
 ## Rakenne
 
+Sovellus mukailee referenssinä olevan Todo-appin rakennetta, koska allekirjoittanut ei keksi parempaakaan toimintatapaa ja olettaa tämän olevan toimiva.
+
+
+
+```mermaid
+ classDiagram
+      UI-->> Services
+      class UI{
+          
+      }
+      class Services{
+         
+      }
+      Services-->>Repositories
+      class Repositories{
+
+      }
+      Services-->>Entities
+      Repositories-->>Entities
+      class Entities{
+
+      }
+```
+
+
 ## Käyttöliittymä
 
 Käyttöliittymän näkymät ovat seuraavat: 
@@ -88,3 +113,4 @@ Molemmat luokat tallentavat tiedostot SQLite-tietokantaan.
 
 ### Muut toiminnallisuudet
 
+Budjettilistaus näyttää kaikki kyseisen käyttäjän budjetit. Tästä listauksesta on mahdollisuus valita yksittäinen budjetti syvempään tarkasteluun. 
