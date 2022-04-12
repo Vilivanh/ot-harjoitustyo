@@ -6,6 +6,21 @@
 
 ## Sovelluslogiikka
 
+```mermaid
+ classDiagram
+      Budget "*" --> "1" User
+      class User{
+          username
+          password
+      }
+      class Budget{
+          Startind date
+          End date
+          Planned incomes
+          Planned Outcomes
+      }
+```
+
 ## Tietojen tallennus
 
 ## Päätoiminnallisuudet
