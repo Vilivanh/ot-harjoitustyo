@@ -8,19 +8,19 @@ Sovellus mukailee referenssinä olevan Todo-appin rakennetta, koska allekirjoitt
 
 ```mermaid
  classDiagram
-      UI-->>Services
+      UI-->>Services 
       class UI{
           Views    
       }
       class Services{
           functionalities   
       }
-      Services-->>Repositories
+      Services-->>Repositories 
       class Repositories{
           data
       }
-      Services-->>Entities
-      Repositories-->>Entities
+      Services-->>Entities 
+      Repositories-->>Entities 
       class Entities{
           user and budget
       }
