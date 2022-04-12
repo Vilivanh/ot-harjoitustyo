@@ -7,4 +7,8 @@
 ## Viikko 4: 
 
 -Kehitetty pohjaa graafiselle käyttöjärjestelmälle
+-Viikon toimenpiteenä on ollut yrittää saada sovellus kunnolla järjestettyä, jotta toimintaa päästään testaamaan
+-Paha haaste: testien puute - hankala testata, kun sovelluslogiikka ollut vajavainen -> korjaantuu viikolla 5
+
+
 
