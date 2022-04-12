@@ -8,7 +8,7 @@ Sovellus mukailee referenssinä olevan Todo-appin rakennetta, koska allekirjoitt
 
 ```mermaid
  classDiagram
-      UI-->> Services
+      UI-->>Services
       class UI{
           
       }
