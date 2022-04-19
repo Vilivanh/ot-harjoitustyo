@@ -39,6 +39,7 @@ class CreateBudgetView:
         start_entry_value = self.start_entry.get()
         end_entry_value = self.end_entry.get()
         initial_entry_value = self.initial_entry.get()
+        content = "0"
         d1 = int(start_entry_value[0:2])
         m1 = int(start_entry_value[3:5])
         y1 = int(start_entry_value[6:])
@@ -54,7 +55,7 @@ class CreateBudgetView:
             label2.grid(row = 0, column = 0, columnspan = 1)
         print(end)
         print((end - start).days + 1)
-        BudgetService.create_budget(budget_entry_value, start, end, initial_entry_value, start, 0, 0, 1)
+        BudgetService.create_budget(budget_entry_value, start, end, content, initial_entry_value, start, 0, 0, 1)
         
 
 

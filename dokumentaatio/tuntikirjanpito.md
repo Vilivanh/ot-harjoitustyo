@@ -12,5 +12,9 @@ Päivämäärä   Aika   Mitä tein
 
 12.4.2022    5h     Käytetty aikaa lähinnä sovelluksen toiminnan kehittämiseen (arkkitehtuurin muotoilu asetti tähän inspiraation)
 
-Yhteensä      19h
+18.4.2022    4h     Rakennettu sovelluksen toimintaa edelleen
+
+19.4.2022    7h     Sovelluksen toiminta jatkunut, arkkitehtuuria hiottu
+
+Yhteensä      30h
 
