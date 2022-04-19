@@ -1,7 +1,7 @@
 from tkinter import ttk, Tk, constants
 from services.BudgetService import BudgetService
 
-class BudgetView:
+class OneBudgetView:
     def __init__(self, user, root):
         self._root = root
         self._user = user
@@ -26,10 +26,12 @@ class BudgetView:
         name_entry_value = self.name_entry.get()
         BudgetService.show_one_budget(name_entry_value)
 
+    
+
 
 window = Tk()
 window.title("Bugdet app")
 
-ui = BudgetView(window)
+ui = OneBudgetView(window)
 
 window.mainloop()

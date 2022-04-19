@@ -24,8 +24,8 @@ class BudgetService:
         self._BR = BR
         self._UR = UR
     
-    def create_budget(self, name, start, end, initial):
-        budget = Budget(name = name, user = self._user, start= start, end = end, initial = initial)
+    def create_budget(self, name, start, end, initial, date, planned, inorout, beginning):
+        budget = Budget(name = name, user = self._user, content = "0", start= start, end = end, initial = initial, date = date, planned = planned, inorout = inorout, beginning = beginning)
         return self._BR.create(budget)
 
     def login(self, username, password):
@@ -44,3 +44,13 @@ class BudgetService:
             raise UsernameExistsError("Username already exists")
         user = self._UR.create(User(username, password))
         return user
+
+
+    def show_budgets(self):
+        budgets = self._BR.find_by_username(self._user.username)
+        return budgets
+
+    def show_one_budget(self, budget_name):
+        budget = self._BR.find_by_budget_name(budget_name)
+        return budget
+        

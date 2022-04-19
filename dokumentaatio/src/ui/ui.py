@@ -1,9 +1,24 @@
 from tkinter import Tk, ttk
+from LoginView import LoginView
+from CreateUserView import CreateUserView
+from BudgetView import BudgetView
+from CreateBudgetView import CreateBudgetView
 
 class UI:
     def __init__(self, root):
         self.root = root
+
+    def _hide_current_view(self):
+        if self._current_view:
+            self._current_view.destroy()
+
+        self._current_view = None
+    
     def start(self):
+        self._hide_current_view()
+        self._current_view = LoginView(self.root)
+    
+    def start2(self):
         label = ttk.Label(master = self.root, text = "Hello world!")
         username_label = ttk.Label(master = self.root, text = "Username")
         username_entry = ttk.Entry(master = self.root)

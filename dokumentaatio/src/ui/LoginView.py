@@ -1,4 +1,5 @@
 from tkinter import ttk, Tk, constants
+from services.BudgetService import BudgetService, InvalidCredentialsError
 
 class LoginView:
     def __init__(self, root):
@@ -30,10 +31,16 @@ class LoginView:
         password_entry_value = self.password_entry.get()
         print(f"Username is: {username_entry_value}")
         print(f"Password is: {password_entry_value}")
+        try:
+            BudgetService.login(username_entry_value, password_entry_value)
+        except InvalidCredentialsError:
+            print("Error")
 
     def _handle_createuser_click(self):
         user = input("New User")
         pw = input("Password")
+        BudgetService.create_user(user, pw)
+        BudgetService.login(user, pw)
 
 
 window = Tk()

@@ -44,13 +44,17 @@ Käyttöliittymän näkymät ovat seuraavat:
           Startind date
           End date
           Initial sum
-      }
-      class BudgetPlan{
-          Date
-          Sum
-          Income or outcome
+          Planned
+          In or out
+          Content
+          Beginning          
       }
 ```
+
+Budget-luokka on ainoa olio, jota tarvitaan. Budgettia luodessa asetetaan starting date, end date, name ja initial sum. 
+Näistä start- ja end datet toistuvat. Beginning-arvo on 0 tai 1, riippuen siitä, onko kyseessä budjetin luominen vai tiedon tallennus. 
+Planned saa arvon 0, jos kyseessä on suunnitelma ja arvon 1, jos kyseessä on toteutunut meno
+ 
 
 ## Tietojen tallennus
 

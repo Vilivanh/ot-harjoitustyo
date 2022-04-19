@@ -17,8 +17,20 @@ class BudgetRepository:
 
         user_budgets = filter(
             lambda budget: budget.user and budgets.user.username == username, budgets)
+        UB = []
+        for budget in user_budgets:
+            if budget not in UB:
+                UB.append(budget)
+        return UB
 
-        return list(user_budgets)
+    def find_by_budget_name(self, username, name):
+
+        budgets = self.find_all()
+
+        the_budget = filter(
+            lambda budget: budget.name==name and budgets.user.username == username, budgets)
+        
+        return the_budget
 
     def create(self, budget):
         budgets = self.find_all()
@@ -54,16 +66,19 @@ class BudgetRepository:
                 row = row.replace('\n', '')
                 parts = row.split(';')
 
-                budget_id = parts[0]
-                content = parts[1]
-                done = parts[2] == '1'
-                username = parts[3]
+                name = parts[0]
+                user = parts[1]
+                start = parts[2]
+                end = parts[3]
+                initial = parts[4]
+                date = parts[5]
+                planned = parts[6]
 
                 user = UserRepository.find_by_username(
-                    username) if username else None
+                    user) if user else None
 
                 budgets.append(
-                    Budget(content, done, user, budget_id)
+                    Budget(name, user, start, end, initial, date, planned)
                 )
 
         return budgets
@@ -75,7 +90,7 @@ class BudgetRepository:
             for budget in budgets:
                 username = budget.user.username if budget.user else ''
 
-                row = f'{budget.id};{budget.name};{budget.start};{budget.end};{username};'
+                row = f'{budget.name};{username};{budget.start};{budget.end};{budget.initial};{budget.date};{budget.planned};{budget.inorout};'
 
                 file.write(row+'\n')
 
