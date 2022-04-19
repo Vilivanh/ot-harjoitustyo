@@ -90,7 +90,7 @@ Tulossa on vielä kolmas luokka, joka tallentaa budjettien yksityiskohdat. Täm�
       participant BudgetRepository
       participant UserRepository
       User->>UI: click "Create budget"
-      UI->>BudgetRepository: create_budget("name","start", "end")
+      UI->>BudgetRepository: create_budget("name","start", "end", "initial sum")
       BudgetRepository->>UserRepository: find_by_name("name")
       UserRepository-->>BudgetRepository: none
       BudgetRepository-->>UI: budget
