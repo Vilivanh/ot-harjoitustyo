@@ -11,6 +11,10 @@ Määrittelydokumentin löytää täältä: (https://github.com/Vilivanh/ot-harj
 
 Tuntikirjanpito on tässä: (https://github.com/Vilivanh/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
+### Arkkitehtuuri
+
+Sovelluksen arkkitehtuuri: https://github.com/Vilivanh/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md
+
 ### Julkaisut
 
 Release, viikko 5: https://github.com/Vilivanh/ot-harjoitustyo/releases/tag/Viikko5
