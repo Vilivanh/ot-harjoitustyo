@@ -13,7 +13,7 @@
 ## Viikko 5: 
 
 -Pettymys omalta osalta - en ehtinyt saada työtä edistettyä käytännössä ollenkaan
--Olen koodia kirjoittanut VSC:llä, ja graafinen järjestelmä ei ole toiminut, mikä tarkoittaa, että en ole päässyt testaamaan sovelluksen toimintaa
+-Olen koodia kirjoittanut VSC:llä, ja graafinen järjestelmä ei ole toiminut, mikä tarkoittaa, että en ole päässyt testaamaan sovelluksen toimintaa käytännössä. Teoriassa saattaa toimia
 -Pyrkimyksenä on saada seuraavaan palautukseen mennessä ongelmia korjattua
 -Edelleen sovelluksen toimintalogiikka keskeneräinen, joten testejä puuttuu
 

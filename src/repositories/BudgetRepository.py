@@ -53,6 +53,15 @@ class BudgetRepository:
     def delete_all(self):
         self._write([])
 
+    def remove(self, budget_name, content, date, inorout):
+        username = self.user
+        budgets = self.find_by_budget_name(username, budget_name)
+        removed_rows = filter(lambda budget: budget.name == budget_name and budget.content == content and budget.date == date and budget.inorout == inorout, budgets)
+
+        self._write(removed_rows)
+
+
+
     def _ensure_file_exists(self):
         Path(self._file_path).touch()
 
@@ -68,29 +77,32 @@ class BudgetRepository:
 
                 name = parts[0]
                 user = parts[1]
-                start = parts[2]
-                end = parts[3]
-                initial = parts[4]
-                date = parts[5]
-                planned = parts[6]
+                content = parts[2]
+                start = parts[3]
+                end = parts[4]
+                initial = parts[5]
+                date = parts[6]
+                planned = parts[7]
+                inorout = parts[8]
+                beginning = parts[9]
 
                 user = UserRepository.find_by_username(
                     user) if user else None
 
                 budgets.append(
-                    Budget(name, user, start, end, initial, date, planned)
+                    Budget(name, user, content, start, end, initial, date, planned, inorout, beginning)
                 )
 
         return budgets
 
-    def _write(self, budgets):
+    def _write(self, budgets, new):
         self._ensure_file_exists()
 
         with open(self._file_path, 'w', encoding='utf-8') as file:
             for budget in budgets:
                 username = budget.user.username if budget.user else ''
 
-                row = f'{budget.name};{username};{budget.start};{budget.end};{budget.initial};{budget.date};{budget.planned};{budget.inorout};'
+                row = f'{new.name};{username};{new.start};{new.end};{new.initial};{new.date};{new.planned};{new.inorout};{new.beginning}'
 
                 file.write(row+'\n')
 

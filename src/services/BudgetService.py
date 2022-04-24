@@ -53,4 +53,31 @@ class BudgetService:
     def show_one_budget(self, budget_name):
         budget = self._BR.find_by_budget_name(budget_name)
         return budget
+
+    def add_to_budget(self, budget_name, content, date, planned, inorout):
+        budgets = self._BR.find_by_budget_name(budget_name)
+        budget = budgets[0]
+        user = budget.user
+        start = budget.start
+        end = budget.end
+        initial = budget.initial
+        self._BR._write(budgets)
+        beginning = "0"
+        new = Budget(budget_name, user, content, start, end, initial, date, planned, inorout, beginning)
+        self._BR._write(budgets, new)
+
+    def remove_from_budget(self, budget_name, content, date, inorout):
+        self._BR._remove(budget_name, content, date, inorout)
+
+    def show_budget_information(self, budget_name):
+        budgets = self._BR.find_by_budget_name(budget_name)
+        planned_incomes = filter(lambda budget: budget.name == budget_name and budget.inorout == "1" and budget.planned == "1", budgets)
+        planned_outcomes = filter(lambda budget: budget.name == budget_name and budget.inorout == "0" and budget.planned == "1", budgets)
+        true_incomes = filter(lambda budget: budget.name == budget_name and budget.inorout == "1" and budget.planned == "0", budgets)
+        true_outcomes = filter(lambda budget: budget.name == budget_name and budget.inorout == "0" and budget.planned == "0", budgets)
+        initial_sum = planned_incomes = filter(lambda budget: budget.name == budget_name and budget.beginning == "1" and budget.planned == "1", budgets)
+        return [planned_incomes, planned_outcomes, true_incomes, true_outcomes, initial_sum]
+
+
+
         

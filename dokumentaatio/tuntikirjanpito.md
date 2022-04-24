@@ -16,5 +16,8 @@ Päivämäärä   Aika   Mitä tein
 
 19.4.2022    7h     Sovelluksen toiminta jatkunut, arkkitehtuuria hiottu
 
-Yhteensä      30h
+24.4.2022    3h     Rakennettu graafinen käyttöjärjestelmä yksittäisen budjetin näyttämistä varten
+
+
+Yhteensä      33h
 
