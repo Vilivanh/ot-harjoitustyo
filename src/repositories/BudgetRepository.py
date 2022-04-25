@@ -2,6 +2,7 @@ from pathlib import Path
 from entities.budget import Budget
 from repositories.UserRepository import UserRepository
 from config import BUDGETS_FILE_PATH
+from db_connection import get_budget_connection
 
 
 class BudgetRepository:
@@ -107,4 +108,4 @@ class BudgetRepository:
                 file.write(row+'\n')
 
 
-budget_repository = BudgetRepository(BUDGETS_FILE_PATH)
+budget_repository = BudgetRepository(get_budget_connection())
