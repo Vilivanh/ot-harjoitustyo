@@ -111,6 +111,23 @@ Tulossa on vielä kolmas luokka, joka tallentaa budjettien yksityiskohdat. Täm�
       BudgetRepository-->>UI: budget
       UI->>UI: show_budgets()
 ```
+### Tietojen lisääminen budjettiin 
+
+```mermaid
+ sequenceDiagram
+      actor User
+      participant UI
+      participant BudgetRepository
+      participant UserRepository
+      participant Budget
+      User->>UI: click "Add to budget"
+      UI->>BudgetRepository: Current_budget
+      BudgetRepository->>UI: Budget_name, start, end
+      UI->>Budget: add_to_budget(Budget_name, start, end, content, sum, date, planned, inorout)      
+      Budget-->>BudgetRepository: add
+      BudgetRepository-->>UI: budget
+      UI->>UI: show_budgets()
+```
 
 
 ### Muut toiminnallisuudet
