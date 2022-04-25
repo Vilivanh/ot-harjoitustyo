@@ -1,8 +1,8 @@
 from tkinter import Tk, ttk
-from LoginView import LoginView
-from CreateUserView import CreateUserView
-from BudgetView import BudgetView
-from CreateBudgetView import CreateBudgetView
+from ui.LoginView import LoginView
+from ui.CreateUserView import CreateUserView
+from ui.BudgetView import BudgetView
+from ui.CreateBudgetView import CreateBudgetView
 
 class UI:
     def __init__(self, root):

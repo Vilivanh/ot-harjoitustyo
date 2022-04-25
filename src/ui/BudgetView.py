@@ -9,7 +9,7 @@ class BudgetView:
         self._initialize()
 
     def _initialize(self):
-        budget_list = BudgetService.show_budgets
+        budget_list = BudgetService.show_budgets()
         
         for i in range(len(budget_list)):
             label = ttk.Label(master = self._root, text = f"{budget_list[i].name}")
