@@ -1,4 +1,11 @@
 class Budgeting:
+    """Luokka, joka vastaa budjettien hallinnasta.
+    
+    Attributes: 
+        user: käyttäjä, jonka tiedoissa budjetti on
+    
+    """
+
     def __init__(self, user):
         self._user = user
         self._initial_sum = 0
@@ -7,6 +14,13 @@ class Budgeting:
         self._outcome = 0
     
     def create_budget(self, name, length, initial_sum):
+        """ Luo uuden budjetin annetulle käyttäjälle.
+        
+        Args:
+            name: käyttäjän nimi
+            length: budjetin suunniteltu ajanjakso
+            initial sum: rahan määrä alkuhetkellä
+        """
         self._user = name
         self._length = length
         self._initial_sum = initial_sum

@@ -19,12 +19,29 @@ class UsernameExistsError(Exception):
     pass
 
 class BudgetService:
+    """ Luokka, joka hallitsee budjetin toimintaa.
+        
+        Args:
+            budjetti- ja käyttäjärepositoriot, jotka huolehtivat näiden säilömisestä
+        """
     def __init__(self, BR = default_budget_repository, UR = default_user_repository):
         self._user = None
         self._BR = BR
         self._UR = UR
     
     def create_budget(self, name, start, end, initial, date, planned, inorout, beginning):
+        """ Luo uuden budjettitiedon annetulle käyttäjälle.
+        
+        Args:
+            name: käyttäjän nimi
+            start: budjetin suunniteltu alkuhetki
+            end: budjetin päättymishetki
+            initial: rahan määrä alkuhetkellä
+            date: käytetään luomaan budjetille päivämäärä
+            planned: kertoo, onko kyseessä suunniteltu vai toteutunut tieto
+            inorout: tulo vai meno
+            beginning: määrittää, onko kyseessä budgetin luominen vai tiedon lisääminen budjettiin
+        """
         budget = Budget(name = name, user = self._user, content = "0", start= start, end = end, initial = initial, date = date, planned = planned, inorout = inorout, beginning = beginning)
         return self._BR.create(budget)
 
