@@ -72,6 +72,16 @@ class BudgetService:
         return budget
 
     def add_to_budget(self, budget_name, content, date, planned, inorout):
+        """ Luo uuden budjettitiedon annetulle käyttäjälle.
+        
+        Args:
+            budget_name: budgetin nimi
+            content: menon/tulon kuvaus
+            date: kertoo, mille päivälle meno tai tulo kohdistuu
+            planned: kertoo, onko kyseessä suunniteltu vai toteutunut tieto
+            inorout: tulo vai meno
+
+        """
         budgets = self._BR.find_by_budget_name(budget_name)
         budget = budgets[0]
         user = budget.user
