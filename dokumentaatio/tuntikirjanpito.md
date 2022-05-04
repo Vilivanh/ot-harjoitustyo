@@ -18,6 +18,7 @@ Päivämäärä   Aika   Mitä tein
 
 24.4.2022    3h     Rakennettu graafinen käyttöjärjestelmä yksittäisen budjetin näyttämistä varten
 
+3.5.2022     2h     Kirjoitettu docstringejä
 
-Yhteensä      33h
+Yhteensä      35h
 
