@@ -17,3 +17,7 @@
 -Pyrkimyksenä on saada seuraavaan palautukseen mennessä ongelmia korjattua
 -Edelleen sovelluksen toimintalogiikka keskeneräinen, joten testejä puuttuu
 
+## Viikko 6: 
+
+-Wappu
+-Docstring
