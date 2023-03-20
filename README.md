@@ -2,4 +2,4 @@
 
 ## NORRI-PELI
 
-Alussa vain **tehtävän** toteuttamista * * varten * * hieman tekstiä
+Alussa vain **tehtävän** toteuttamista *varten* hieman tekstiä
