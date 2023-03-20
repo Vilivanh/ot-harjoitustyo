@@ -1,0 +1,99 @@
+commit 1492fc97e72ccdd1dc53dcd50e25c378c3a4dc15
+Author: Vili Vanhala <vili.vanhala@outlook.com>
+Date:   Mon Mar 20 21:07:37 2023 +0200
+
+    tehtävä 11
+
+ tiedostoja/file1             | 0
+ tiedostoja/{file2 => file22} | 0
+ tiedostoja/file3             | 1 +
+ 3 files changed, 1 insertion(+)
+
+commit a62e6674b467bca5c72090db0eb58929ff23a1b2
+Author: Vili Vanhala <vili.vanhala@outlook.com>
+Date:   Mon Mar 20 21:04:48 2023 +0200
+
+    tehtävä 11
+
+ stuff/tiedosto.txt | 137 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ tiedostoja/file1   |   0
+ tiedostoja/file2   |   1 +
+ tiedostoja/file3   |   0
+ toinen.txt         |   1 -
+ 5 files changed, 138 insertions(+), 1 deletion(-)
+
+commit fb9864da04e635aaad475f0ff970a4eb72c1985a
+Author: Vili Vanhala <vili.vanhala@outlook.com>
+Date:   Mon Mar 20 20:54:34 2023 +0200
+
+    muutoksia
+
+ stuff/tiedosto.txt | 0
+ toinen.txt         | 1 +
+ 2 files changed, 1 insertion(+)
+
+commit 5afe504389ab3e78e0aef8bcf4aab3e507d88d88
+Author: Vili Vanhala <vili.vanhala@outlook.com>
+Date:   Sun Mar 19 22:40:49 2023 +0200
+
+    tehtävän 9 muutokset
+
+ eka.txt    | 2 +-
+ kolmas.txt | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 075b97dd04164e0716c8e880086290c9b61d3607
+Author: Vili Vanhala <vili.vanhala@outlook.com>
+Date:   Sun Mar 19 22:39:30 2023 +0200
+
+    uudelleen nimeäminen
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ca04bce14eb5f3e7d19df5d9f32ba4d50c6391c1
+Author: Vili Vanhala <vili.vanhala@outlook.com>
+Date:   Sun Mar 19 22:38:45 2023 +0200
+
+    poistettu toinen.txt
+
+ toinen.txt | 5 -----
+ 1 file changed, 5 deletions(-)
+
+commit 3ff686858c0a86487fb0a6d1b8a8b1e84faee76d
+Author: Vili Vanhala <vili.vanhala@outlook.com>
+Date:   Sun Mar 19 22:36:29 2023 +0200
+
+    muutoksia
+
+ kolmas.txt | 1 +
+ toinen.txt | 5 +++++
+ 2 files changed, 6 insertions(+)
+
+commit dada4bdd426715beb82715308a2c78f22b50ea7b
+Author: Vili Vanhala <vili.vanhala@outlook.com>
+Date:   Sun Mar 19 22:34:19 2023 +0200
+
+    kolmas.txt luotu
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 22e924713a604211a4d8892243762fbe03a6a1ba
+Author: Vili Vanhala <vili.vanhala@outlook.com>
+Date:   Sun Mar 19 22:33:19 2023 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 39eca777861a97e26d505635eb01116bf896f460
+Author: Vili Vanhala <vili.vanhala@outlook.com>
+Date:   Sun Mar 19 22:18:47 2023 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
