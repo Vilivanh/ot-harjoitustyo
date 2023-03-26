@@ -8,3 +8,4 @@
 
 [komentorivi.txt](https://github.com/Vilivanh/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
+Tehtävää 17 varten tämä rivi...
