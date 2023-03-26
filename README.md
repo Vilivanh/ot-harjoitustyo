@@ -16,8 +16,8 @@ Tehtävää 17 varten tämä rivi...
 
 ### Vaatimusmäärittely
 
-(https://github.com/Vilivanh/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+[Vaatimusmäärittely](https://github.com/Vilivanh/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 ### Tuntikirjanpito
 
-(https://github.com/Vilivanh/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+[Tuntikirjanpito](https://github.com/Vilivanh/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
