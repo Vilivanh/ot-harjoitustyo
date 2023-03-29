@@ -15,7 +15,7 @@
 	main->>lippu_luukku: Kioski()
 	main->>kallen_kortti: osta_matkakortti("Kalle")
 	kallen_kortti->>lippu_luukku: Matkakortti("Kalle")
-	lippu_luukku-->>kallen_kortti("Kalle")
+	lippu_luukku-->>kallen_kortti: osta_matkakortti("Kalle")
 	Note right of kallen_kortti: Omistaja=Kalle\npvm=0\nkk=0\narvo=0
 	main->>rautatietori: lataa_arvoa(kallen_kortti, 3)
 	rautatietori-->>rautatietori: lataa_arvoa(kallen_kortti, 3)
