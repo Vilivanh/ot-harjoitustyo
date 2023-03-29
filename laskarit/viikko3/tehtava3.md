@@ -1,4 +1,4 @@
-```Mermaid
+```mermaid
  sequenceDiagram
 	main->>Machine: Machine()
 	Machine->>FuelTank: FuelTank()
