@@ -14,3 +14,5 @@
 		Machine ->> Engine: use_energy()
 		Engine -->> FuelTank: consume(10)
 	end
+
+```
