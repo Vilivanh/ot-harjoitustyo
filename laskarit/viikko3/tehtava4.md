@@ -25,5 +25,4 @@
 	main-->bussi244: osta_lippu(kallen_kortti, 2)
 	bussi244->>kallen_kortti: vahenna_arvoa(3.5)
 	kallen_kortti->>bussi244: False
-
 ```
