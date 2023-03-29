@@ -8,7 +8,7 @@ Laajennettu monopoli-pelin toimintalogiikka
         Pelilauta --> "2-8" Pelaaja
 	Type "katu" <--> "omistaja" Pelaaja
 	Toiminto <--> Ruutu
-	Pelilauta <--> "vankila" "aloitus" Sijainti
+	Pelilauta <--> "vankila" Ruutu
         class Ruutu{
                 seuraava ruutu
 		Type
