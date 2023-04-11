@@ -1,9 +1,7 @@
 # Import the pygame module
 import pygame
-import pygame_cards
 from shuffle import Methods
 from pygame import font
-from cards import AceOfSpades
 
 pygame.init()
 
@@ -14,7 +12,7 @@ green = (0, 0, 0)
 blue = (255, 255, 255)
 
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-deck,playerlists = Methods.shuffle()
+starter,playerlists = Methods.shuffle()
 font = pygame.font.Font('freesansbold.ttf', 32)
 players_list = playerlists[0]
 print(players_list)
@@ -23,7 +21,7 @@ print(players_list)
 print(playerlists[0])
 card_list = []
 
-text = font.render(deck, True, green, blue)
+text = font.render(starter, True, green, blue)
 textRect = text.get_rect()
 textRect.center = (1000 // 2, 700 // 2)
 screen.blit(text, textRect)    
@@ -39,7 +37,7 @@ while running:
     screen.fill((0, 204, 0))
 
     
-    screen.blit(text, textRect)
+    
     for i in range(len(players_list)):
         text = font.render(players_list[i][1], True, green, blue)
         textRect = text.get_rect()

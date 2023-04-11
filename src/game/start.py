@@ -1,13 +1,13 @@
 import pygame
 from shuffle import Methods
 from pygame import font
-from cards import AceofSpades
+
 
 pygame.init()
 
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 700
-font = pygame.font.Font('freesansbold.ttf', 32)
+font = pygame.font.Font('freesansbold.ttf', 64)
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 running = True
 choose_start = "START"
@@ -18,6 +18,11 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+        
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            pos = pygame.mouse.get_pos()
+            
+            print(pos)
 
         # Fill the background with white
     screen.fill((0, 204, 0))
@@ -30,7 +35,6 @@ while running:
     text2Rect.center = (700, 500)
     screen.blit(text1, text1Rect)
     screen.blit(text2, text2Rect)
-    screen.display()
 
     pygame.display.flip()
 pygame.quit()

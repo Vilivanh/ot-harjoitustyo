@@ -21,12 +21,9 @@ class GameLoop:
     def _handle_events(self):
         for event in pygame.event.get():
             if event.type == pygame.MOUSEBUTTONDOWN:
-                x,y = event.pos
+                #x,y = event.pos
                 
             elif event.type == pygame.QUIT:
                 return False
 
-    def _render(self):
-        self._level.all_sprites.draw(self._display)
-
-        pygame.display.update()
+    
