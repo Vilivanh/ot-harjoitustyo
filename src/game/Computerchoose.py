@@ -38,7 +38,7 @@ class ComputerChoose:
                     if suit == "spade" or "heart":
                         chosen = (hand[i][0], suit)
                     elif suit == "club":
-                        chosenrank =  chosen[0]
+                        chosenrank = chosen[0]
                         if chosenrank == "jack":
                             chosenrank = "11"
                         elif chosenrank == "queen":
@@ -80,7 +80,7 @@ class ComputerChoose:
                         
         return chosen
 
-    def nonempty(tabledeck,hand):
+    def nonempty(self, tabledeck, hand):
         top_card = tabledeck[-1]
         toprank = top_card[0]
         if toprank == "jack":
@@ -130,7 +130,7 @@ class ComputerChoose:
                                 chosenrank = "14"
                             else:
                                 chosenrank = chosen[0]
-                            if int(chosenrank)>int(rank):
+                            if int(chosenrank) > int(rank):
                                 if rank == "11":
                                     rank = "jack"
                                 elif rank == "12":

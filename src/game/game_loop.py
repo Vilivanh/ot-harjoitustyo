@@ -23,7 +23,7 @@ tablehandles = []
 running = True
 newturn = False
 while running:
-    if len(tabledeck)>0:
+    if len(tabledeck) > 0:
         for i in range(len(tabledeck)):
             rank = tabledeck[i][0]
             if rank == "11":
@@ -59,7 +59,7 @@ while running:
         card_position = pygame.Rect(60+i*60, 500, 59, 145)
         
         clickhandles.append((card_position, rank, suit))
-        screen.blit(image_scaled, (60+i*60,500))
+        screen.blit(image_scaled, (60+i*60, 500))
     if len(ComputerHands) == 1:
         for i in range(len(ComputerHands)):
             for j in range(len(ComputerHands[i])):
@@ -69,7 +69,7 @@ while running:
                 image_scaled2 = pygame.transform.scale(image, ANOTHER_IMAGE_SIZE)
                 image_scaled = pygame.transform.rotate(image_scaled2, (i+1)*90)
                 if i == 0:
-                    screen.blit(image_scaled, (200+j*30,20))
+                    screen.blit(image_scaled, (200+j*30, 20))
     elif len(ComputerHands) == 2:
         for i in range(len(ComputerHands)):
             for j in range(len(ComputerHands[i])):
@@ -79,9 +79,9 @@ while running:
                 image_scaled2 = pygame.transform.scale(image, ANOTHER_IMAGE_SIZE)
                 image_scaled = pygame.transform.rotate(image_scaled2, (i+1)*90)
                 if i == 0:
-                    screen.blit(image_scaled, (i*40,200+10*j))
+                    screen.blit(image_scaled, (i*40, 200+10*j))
                 if i == 1:
-                    screen.blit(image_scaled, (200+j*30,20))
+                    screen.blit(image_scaled, (200+j*30, 20))
                      
     elif len(ComputerHands) == 3:
         for i in range(len(ComputerHands)):
@@ -92,11 +92,11 @@ while running:
                 image_scaled2 = pygame.transform.scale(image, ANOTHER_IMAGE_SIZE)
                 image_scaled = pygame.transform.rotate(image_scaled2, (i+1)*90)
                 if i == 0:
-                    screen.blit(image_scaled, (i*40,200+10*j))
+                    screen.blit(image_scaled, (i*40, 200+10*j))
                 if i == 1:
-                    screen.blit(image_scaled, (200+j*30,20))
+                    screen.blit(image_scaled, (200+j*30, 20))
                 if i == 2:
-                    screen.blit(image_scaled, (i*450,200+10*j))
+                    screen.blit(image_scaled, (i*450, 200+10*j))
     elif len(ComputerHands) == 4:
         for i in range(len(ComputerHands)):
             for j in range(len(ComputerHands[i])):
@@ -113,13 +113,13 @@ while running:
                 elif i == 3:
                     image_scaled = pygame.transform.rotate(image_scaled2, (i)*90)
                 if i == 0:
-                    screen.blit(image_scaled, (10+i*40,200+10*j))
+                    screen.blit(image_scaled, (10+i*40, 200+10*j))
                 if i == 1:
-                    screen.blit(image_scaled, (20+j*30,10))
+                    screen.blit(image_scaled, (20+j*30, 10))
                 if i == 2:
-                    screen.blit(image_scaled, (450+(j-1)*30,10))
+                    screen.blit(image_scaled, (450+(j-1)*30, 10))
                 if i == 3:
-                    screen.blit(image_scaled, (i*275,200+10*j))
+                    screen.blit(image_scaled, (i*275, 200+10*j))
 
     elif len(ComputerHands) == 5:
         for i in range(len(ComputerHands)):
@@ -139,15 +139,15 @@ while running:
                 elif i == 4:
                     image_scaled = pygame.transform.rotate(image_scaled2, (i-1)*90)
                 if i == 0:
-                    screen.blit(image_scaled, (10+i*40,200+10*j))
+                    screen.blit(image_scaled, (10+i*40, 200+10*j))
                 if i == 1:
-                    screen.blit(image_scaled, (0+j*20,10))
+                    screen.blit(image_scaled, (0+j*20, 10))
                 if i == 2:
-                    screen.blit(image_scaled, (350+(j-1)*20,10))
+                    screen.blit(image_scaled, (350+(j-1)*20, 10))
                 if i == 3:
-                    screen.blit(image_scaled, (650+(j-2)*20,10))
+                    screen.blit(image_scaled, (650+(j-2)*20, 10))
                 if i == 4:
-                    screen.blit(image_scaled, (i*225,200+10*j))
+                    screen.blit(image_scaled, (i*225, 200+10*j))
 
     if len(tabledeck) > 0: 
         for i in range(len(tabledeck)):
@@ -156,7 +156,7 @@ while running:
             image = pygame.image.load(os.path.join(dirname, "assets", filename))
             image_scaled = pygame.transform.scale(image, DEFAULT_IMAGE_SIZE)
             card_position = pygame.Rect(100+i*60, 200, 59, 145)
-            screen.blit(image_scaled, (100+i*60,200))
+            screen.blit(image_scaled, (100+i*60, 200))
 
 
     if played_cards == 0:
@@ -271,7 +271,7 @@ while running:
                         clickhandles = []
                         TurnToPlay = "Computer 0"
                 else:
-                    if len(tabledeck) >0:
+                    if len(tabledeck) > 0:
                         top_card = tabledeck[-1]
                         toprank = top_card[0]
                         if toprank == "jack":
