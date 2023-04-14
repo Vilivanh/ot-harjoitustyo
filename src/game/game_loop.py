@@ -173,6 +173,8 @@ while running:
             tabledeck.append(chosen_card)
             played_cards +=1
             ComputerHands[PlayingComputer].remove(chosen_card)
+            UpdateScreen.update_screen(PlayerHand, ComputerHands, tabledeck)
+            pygame.time.wait(2500)
             PlayingComputer += 1
             TurnToPlay = f"Computer {PlayingComputer}"
             if PlayingComputer == len(ComputerHands):
@@ -189,10 +191,11 @@ while running:
                 if chosen != None:
                     tabledeck.append(chosen)
                     ComputerHands[PlayingComputer].remove(chosen)
+                    UpdateScreen.update_screen(PlayerHand, ComputerHands, tabledeck)
                     if len(ComputerHands[PlayingComputer]) == 0:
                         ComputerHands.pop(PlayingComputer)
                         players_number -=1
-                    
+                    pygame.time.wait(900)
                     played_cards += 1
                     if len(tabledeck) == players_number:
                         TurnToPlay = f"Computer {PlayingComputer}"
@@ -339,6 +342,7 @@ while running:
                                 TurnToPlay = "Computer 0"
                     elif len(tabledeck) == 0:
                         if newturn == True:
+                            UpdateScreen.update_screen(PlayerHand, ComputerHands, tabledeck)
                             if clicked != None:
                                 tabledeck.append(clicked)
                                 PlayerHand.remove(clicked)

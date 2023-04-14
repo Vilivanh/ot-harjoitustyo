@@ -4,8 +4,8 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
 pygame.display.set_caption('Norri')
 screen.fill((0, 204, 0))
-clickhandles = []
-tablehandles = []
+#clickhandles = []
+#tablehandles = []
 class UpdateScreen:
     def update_screen(PlayerHand, ComputerHands, tabledeck):
         
