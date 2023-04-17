@@ -15,7 +15,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
 pygame.display.set_caption('Norri')
 screen.fill((0, 204, 0))
-players_number=6
+players_number = 6
 PlayerHand, ComputerHands = Play().deal(players_number)
 clickhandles = []
 tablehandles = []
@@ -174,7 +174,6 @@ while running:
             played_cards +=1
             ComputerHands[PlayingComputer].remove(chosen_card)
             UpdateScreen.update_screen(PlayerHand, ComputerHands, tabledeck)
-            pygame.time.wait(2500)
             PlayingComputer += 1
             TurnToPlay = f"Computer {PlayingComputer}"
             if PlayingComputer == len(ComputerHands):
