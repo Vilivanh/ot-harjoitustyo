@@ -38,14 +38,19 @@ Tietokoneet toimivat samalla lailla, tässä siis N voi olla mikä tahansa väli
 	actor Player
 	participant TableDeck
 	participant Computer_N
+	participant UI
 	UI->>Player: check_hand(2 of clubs)
 	Player->>UI: starter(Boolean)
 	UI->>Computer_N: check_hand(2 of clubs)
 	Computer_N->>UI: starter(Boolean)
 	UI->>UI: starter(computer or player)
 	UI->>Player(starter)
+	Mote right of Player: assuming that player has two of clubs 
 	Player->>UI: click "chosen card"
 	UI->>tabledeck: add(chosen_card)
-	alt when starting, has to be 2 of clubs
+	Note right if UI: when starting, has to be 2 of clubs
+	UI->>Computer_N: turntoplay(Computer_N)
+	UI->>UI: choose(Computers_deck)
+	UI->>Computer_N: turntoplay(Computer_N + 1)
 ```
 	
