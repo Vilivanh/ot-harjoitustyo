@@ -57,6 +57,9 @@ Tietokoneet toimivat samalla lailla, tässä siis N voi olla mikä tahansa väli
 	UI->>UI: turntoplay(Computer_N + 1)
 	UI-->>UI: if turntoplay == len(players), turntoplay=player
 	Player->>UI: click "chosen_card"
+	UI-->>UI: check(chosen_card)
 	UI->>TableDeck: add(chosen_card)
 ```
-	
+
+choose-metodissa tietokone valitsee, pelaako vai nostaako kortin pohjautun pöytäpinon sisältöön. 
+Pelaaja saa itse valita, nostaako vai pelaako kortin. Kortin pitää kuitenkin pelatessa olla edellistä isompi.	

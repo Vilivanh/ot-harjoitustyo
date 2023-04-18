@@ -18,3 +18,7 @@ Norri on korttipeli, jossa pelaajan tehtävä on päästä korteistaan eroon. Pe
 ### Changelog
 
 [Changelog](https://github.com/Vilivanh/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
+
+### Arkkitehtuuri
+
+[Arkkitehtuuri](https://github.com/Vilivanh/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
