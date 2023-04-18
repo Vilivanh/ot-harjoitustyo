@@ -27,12 +27,16 @@ Aloitusnäkymässä pelaaja valitsee, aloittaako pelin, katsooko säännöt (vai
 	GamePlay->>UI: play(number)
 	UI->UI: play(number)
 
+
 ```
+
 
 ## Pelin kulku
 
+
 Tietokoneet toimivat samalla lailla, tässä siis N voi olla mikä tahansa välillä 1-6, missä N merkkaa tietokoneen numeroa
 
+```
 ```mermaid
  sequenceDiagram
 	actor Player
