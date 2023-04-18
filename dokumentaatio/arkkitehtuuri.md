@@ -47,7 +47,7 @@ Tietokoneet toimivat samalla lailla, tässä siis N voi olla mikä tahansa väli
 	UI->>Computer_N: check_hand(2 of clubs)
 	Computer_N->>UI: starter(Boolean)
 	UI->>UI: starter(computer or player)
-	UI->>Player(starter)
+	UI->>Player: starter()
 	Player-->>Player: assuming that player has two of clubs 
 	Player->>UI: click "chosen card"
 	UI->>TableDeck: add(chosen_card)
