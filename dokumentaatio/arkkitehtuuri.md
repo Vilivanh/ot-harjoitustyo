@@ -36,7 +36,6 @@ Aloitusnäkymässä pelaaja valitsee, aloittaako pelin, katsooko säännöt (vai
 
 Tietokoneet toimivat samalla lailla, tässä siis N voi olla mikä tahansa välillä 1-6, missä N merkkaa tietokoneen numeroa
 
-```
 ```mermaid
  sequenceDiagram
 	actor Player
