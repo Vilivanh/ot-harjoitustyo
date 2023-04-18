@@ -45,10 +45,10 @@ Tietokoneet toimivat samalla lailla, tässä siis N voi olla mikä tahansa väli
 	Computer_N->>UI: starter(Boolean)
 	UI->>UI: starter(computer or player)
 	UI->>Player(starter)
-	Note right of Player: assuming that player has two of clubs 
+	Player-->>Player: assuming that player has two of clubs 
 	Player->>UI: click "chosen card"
 	UI->>TableDeck: add(chosen_card)
-	Note right if UI: when starting, has to be 2 of clubs
+	UI->>Player: when starting, has to be 2 of clubs
 	UI->>Computer_N: turntoplay(Computer_N)
 	UI->>UI: choose(Computers_deck)
 	UI->>UI: turntoplay(Computer_N + 1)
