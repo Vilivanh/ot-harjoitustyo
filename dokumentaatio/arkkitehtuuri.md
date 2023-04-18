@@ -45,12 +45,15 @@ Tietokoneet toimivat samalla lailla, tässä siis N voi olla mikä tahansa väli
 	Computer_N->>UI: starter(Boolean)
 	UI->>UI: starter(computer or player)
 	UI->>Player(starter)
-	Mote right of Player: assuming that player has two of clubs 
+	Note right of Player: assuming that player has two of clubs 
 	Player->>UI: click "chosen card"
-	UI->>tabledeck: add(chosen_card)
+	UI->>TableDeck: add(chosen_card)
 	Note right if UI: when starting, has to be 2 of clubs
 	UI->>Computer_N: turntoplay(Computer_N)
 	UI->>UI: choose(Computers_deck)
-	UI->>Computer_N: turntoplay(Computer_N + 1)
+	UI->>UI: turntoplay(Computer_N + 1)
+	UI-->>UI: if turntoplay == len(players), turntoplay=player
+	Player->>UI: click "chosen_card"
+	UI->>TableDeck: add(chosen_card)
 ```
 	
