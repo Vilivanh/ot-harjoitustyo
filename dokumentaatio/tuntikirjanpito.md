@@ -10,5 +10,8 @@
 | 9.4..  | 8    | sovelluskehittelyä
 |10.4.   | 9    | sovelluskehittelyä
 | 11.4.. | 5    | sovelluskehittelyä
+| 13.4.  | 6    | sovelluskehittelyä
+| 15.4.  | 4    | sovelluskehitystä, käynnistyksen korjaaminen
 
-|YHT     | 45   |
+|YHT     | 55   |
+

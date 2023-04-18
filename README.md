@@ -14,3 +14,7 @@ Norri on korttipeli, jossa pelaajan tehtävä on päästä korteistaan eroon. Pe
 ### Tuntikirjanpito
 
 [Tuntikirjanpito](https://github.com/Vilivanh/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+
+### Changelog
+
+[Changelog](https://github.com/Vilivanh/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
