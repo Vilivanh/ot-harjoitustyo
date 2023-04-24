@@ -194,7 +194,9 @@ while running:
                     if len(ComputerHands[PlayingComputer]) == 0:
                         ComputerHands.pop(PlayingComputer)
                         players_number -=1
-                    pygame.time.wait(900)
+                        if PlayingComputer == len(ComputerHands):
+                            TurnToPlay == "Player"
+                    pygame.time.wait(600)
                     played_cards += 1
                     if len(tabledeck) == players_number:
                         TurnToPlay = f"Computer {PlayingComputer}"
@@ -306,6 +308,7 @@ while running:
                                     if len(tabledeck) == players_number:
                                         TurnToPlay = "Player"
                                         tabledeck = []
+                                        UpdateScreen.update_screen(PlayerHand, ComputerHands, tabledeck)
                                     else:
                                         TurnToPlay = "Computer 0"
                             else:

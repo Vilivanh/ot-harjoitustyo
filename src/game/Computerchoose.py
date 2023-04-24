@@ -153,6 +153,8 @@ class ComputerChoose:
                                     chosen = (hand[i][0], suit)
                                 if len(tabledeck) == players_number - 1:
                                     chosen = (hand[i][0], suit)
+                                if len(hand) < 3:
+                                    chosen = (hand[i][0], suit)
                 elif topsuit == "heart":
                     if int(toprank) > 11:
                         if chosen == None:
@@ -160,5 +162,7 @@ class ComputerChoose:
                                 if int(rank) < 5:
                                     chosen = (hand[i][0], suit)
                                 if len(tabledeck) == players_number - 1:
+                                    chosen = (hand[i][0], suit)
+                                if len(hand) < 3:
                                     chosen = (hand[i][0], suit)
         return chosen
