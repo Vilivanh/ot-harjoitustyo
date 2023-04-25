@@ -8,6 +8,17 @@ Norri on korttipeli, jossa pelaajan tehtävä on päästä korteistaan eroon. Pe
 
 [Release](https://github.com/Vilivanh/ot-harjoitustyo/releases/tag/viikko5)
 
+#### Ohjelman käynnistäminen
+
+1. Asenna riippuvuudet komennolla poetry install
+2. Käynnistä peli komennolla poetry run invoke start
+
+(Ohjelman käynnistäminen komentorivin kautta saattaa tuottaa virheen, sovellus aukeaa esim. Visual Studio Coden kautta, suorittamalla game_loop.py -tiedoston)
+
+#### Testit
+
+Testit voi suorittaa komennolla poetry run invoke test
+
 ### DOKUMENTAATIO
 
 
