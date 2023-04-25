@@ -19,6 +19,10 @@ Norri on korttipeli, jossa pelaajan tehtävä on päästä korteistaan eroon. Pe
 
 Testit voi suorittaa komennolla poetry run invoke test
 
+Testikattavuusraportin saa komennolla poetry run invoke coverage-report
+
+Pylint-raportin saa komennolla poetry run invoke lint
+
 ### DOKUMENTAATIO
 
 
