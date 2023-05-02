@@ -12,6 +12,7 @@
 | 11.4.. | 5    | sovelluskehittelyä
 | 13.4.  | 6    | sovelluskehittelyä
 | 15.4.  | 4    | sovelluskehitystä, käynnistyksen korjaaminen
+| 2.5.   | 1    | jatkokehityksen pohtimista
 
-|YHT     | 55   |
+|YHT     | 56   |
 
