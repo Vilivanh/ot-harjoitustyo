@@ -2,7 +2,7 @@
 
 ## NORRI-PELI
 
-Norri on korttipeli, jossa pelaajan tehtävä on päästä korteistaan eroon. Pelaaja saa joka vuorollaan päättää, nostaako pöytäpakasta kortin vai pelaako kortin. Pelattavan kortin on oltava edellistä korttia suurempi. Jos pelaaja nostaa kortin, hän nostaa pöytäpakan pohjimmaisen kortin. Jos pöydällä on pataa tai herttaa, voi pelaaja pelata päälle suuremman padan tai hertan, tai minkä tahansa ruudun. Jos pöydässä päällimmäinen kortti on ruutu, voi pelata vain suuremman ruudun. Ristin päälle voi pelata vain ristiä.  
+Norri on korttipeli, jossa pelaajan tehtävä on päästä korteistaan eroon. Pelaaja saa joka vuorollaan päättää, nostaako pöytäpakasta kortin vai pelaako kortin. Pelattavan kortin on oltava edellistä korttia suurempi. Jos pelaaja nostaa (riippumatta siitä, voisiko hän pelata vai ei) kortin, hän nostaa pöytäpakan pohjimmaisen kortin. Jos pöydällä on pataa tai herttaa, voi pelaaja pelata päälle suuremman padan tai hertan, tai minkä tahansa ruudun. Jos pöydässä päällimmäinen kortti on ruutu, voi pelata vain suuremman ruudun. Ristin päälle voi pelata vain ristiä. Kun pöydällä on saman verran kortteja kuin pelaajia, pöydällä oleva pakka "kaatuu" eli pöydällä olevat kortit poistuvat pelistä. Pelaaja, joka on kaatanut pakan, saa jatkaa peliä lyömällä kortin tyhjään pöytään. Pelaajan nostaessa kortin, vuoro siirtyy seuraavalle pelaajalle.  
 
 ### VIIKON 5 RELEASE
 
