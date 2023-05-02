@@ -8,6 +8,10 @@ screen.fill((0, 204, 0))
 #tablehandles = []
 class UpdateScreen:
     def update_screen(PlayerHand, ComputerHands, tabledeck):
+        """
+        Args: PlayerHand, ComputerHands, tabledeck
+        Returns: updates screen based on hands and tabledeck
+        """
         
         screen.fill((0, 204, 0))
         clickhandles = []

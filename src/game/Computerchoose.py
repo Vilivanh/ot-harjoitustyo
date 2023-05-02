@@ -1,5 +1,10 @@
 class ComputerChoose:
     def emptytable(hand):
+        """
+        chooses which card to play, when table does not have any cards
+        aim is to choose the smalles card, assuming that it is heart or spade
+        diamonds should be played only when there is nothing else to play
+        """
         chosen = None
         for i in range(len(hand)):
             rank = hand[i][0]
@@ -81,6 +86,11 @@ class ComputerChoose:
         return chosen
 
     def nonempty(tabledeck, hand):
+        """
+        chooses which card to play, when table has cards
+        if table's top card is spade, heart or club, play higher of these
+        if top card is high spade or heart, play small diamond
+        """
         top_card = tabledeck[-1]
         toprank = top_card[0]
         if toprank == "jack":

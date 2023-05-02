@@ -12,6 +12,13 @@ class Deck:
         self.build()
 
     def build(self):
+        """
+        create a deck
+        Args: 
+        rank (1-14), suit (club, spade, heart, diamond)
+        Returns:
+        Deck with 52 cards
+        """
         for rank in ranks:
             for suit in suits:
                 self.cards.append((rank, suit))
