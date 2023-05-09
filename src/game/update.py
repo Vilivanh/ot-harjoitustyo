@@ -95,7 +95,7 @@ class UpdateScreen:
                         screen.blit(image_scaled, (650+(j-2)*20, 10))
                     if i == 4:
                         screen.blit(image_scaled, (i*225, 200+10*j))
-            if len(tabledeck) > 0: 
+            if len(tabledeck) > 0:
                 for i in range(len(tabledeck)):
                     rank, suit = tabledeck[i][0], tabledeck[i][1]
                     image_scaled = CardHandlers.card_image_scaler(rank, suit)

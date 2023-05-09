@@ -1,9 +1,11 @@
-import pygame as pygame
+"""
+Sets the constants, that are same in each class
+"""
 import os
+import pygame as pygame
 from pygame.locals import *
 
 pygame.init()
-
 dirname = os.path.dirname(__file__)
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 700
