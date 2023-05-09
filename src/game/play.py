@@ -1,18 +1,23 @@
 from deck import Deck, Hand
 
 class Play:
+    """
+    Sets the game by dealing the deck
+    """
     def __init__(self):
         self.deck = Deck()
         self.player = Hand()
         self.computer = Hand()
         self.deck.shuffle()
-
-        
-    def deal(self,players_number):
+   
+    def deal(self, players_number):
+        """
+        Deals the deck to players
+        """
         deck = self.deck
         PlayerHand = []
         ComputerHands = []
-        for i in range(1,players_number):
+        for i in range(1, players_number):
             ComputerHands.append([])
         while len(deck.cards) > 0:
             for i in range(players_number):
@@ -23,9 +28,5 @@ class Play:
                     if len(deck.cards) > 0:
                         ComputerHands[i-1].append(self.deck.cards[0])
                         self.deck.cards.pop(0)
-        return PlayerHand,ComputerHands
-
-        
-        
-
-        
+        return PlayerHand, ComputerHands
+    
