@@ -1,5 +1,5 @@
 import unittest
-from game.play import Play
+from play import Play
 
 
 class TestShuffle(unittest.TestCase):
