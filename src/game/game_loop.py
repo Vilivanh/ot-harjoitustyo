@@ -20,7 +20,7 @@ tabledeck = []
 TURNTOPLAY = None
 RUNNING = True
 NEWTURN = False
-def game_loop(RUNNING, tabledeck, clickhandles, tablehandles, played_cards, players_number):
+def game_loop(RUNNING, tabledeck, clickhandles, tablehandles, played_cards, players_number, NEWTURN):
     while RUNNING:
         if len(tabledeck) > 0:
             for i in range(len(tabledeck)):
