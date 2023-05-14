@@ -16,18 +16,18 @@ class ComputerChoose:
         """
         chosen = None
         for i in range(len(hand)):
-            rank = hand[i][0]
+            rank = Handlers().rank_integer(hand[i][0])
             suit = hand[i][1]
             if chosen == None:
-                chosen = (rank, suit)
+                chosen = (hand[i][0], suit)
             else:
                 if chosen[1] == "diamond":
                     if suit == "spade":
-                        chosen = (rank, suit)
+                        chosen = (hand[i][0], suit)
                     elif suit == "heart":
-                        chosen = (rank, suit)
+                        chosen = (hand[i][0], suit)
                     elif suit == "club":
-                        chosen = (rank, suit)
+                        chosen = (hand[i][0], suit)
                     else:
                         chosenrank = Handlers().rank_integer(chosen[0])
                         if int(chosenrank) > int(rank):
