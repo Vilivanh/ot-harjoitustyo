@@ -83,7 +83,6 @@ def game_loop(RUNNING, tabledeck, clickhandles, tablehandles, played_cards, play
                             players_number -= 1
                             if PlayingComputer == len(Computer_Hands):
                                 TURNTOPLAY == "Player"
-                                print(TURNTOPLAY)
                         pygame.time.wait(150)
                         played_cards += 1
                         if len(tabledeck) == players_number:
@@ -95,10 +94,8 @@ def game_loop(RUNNING, tabledeck, clickhandles, tablehandles, played_cards, play
                             NEXTTURN = PlayingComputer + 1
                             if NEXTTURN == len(Computer_Hands):
                                 TURNTOPLAY = "Player"
-                                print(TURNTOPLAY)
                             else:
                                 TURNTOPLAY = f"Computer {NEXTTURN}"
-                                print(TURNTOPLAY)
                     if CHOSEN is None:
                         Computer_Hands[PlayingComputer].append(tabledeck[0])
                         tabledeck.pop(0)
@@ -109,7 +106,6 @@ def game_loop(RUNNING, tabledeck, clickhandles, tablehandles, played_cards, play
                             TURNTOPLAY = "Player"
                         else:
                             TURNTOPLAY = f"Computer {NEXTTURN}"
-                            print(TURNTOPLAY)
 
                 else:
                     PLAYEDHAND = Computer_Hands[PlayingComputer]
@@ -126,7 +122,6 @@ def game_loop(RUNNING, tabledeck, clickhandles, tablehandles, played_cards, play
                             TURNTOPLAY = "Player"
                         else:
                             TURNTOPLAY = f"Computer {NEXTTURN}"
-                        print(TURNTOPLAY)
                         UpdateScreen().update_screen(player_hand, Computer_Hands, tabledeck)
                         played_cards += 1
                     
@@ -144,7 +139,6 @@ def game_loop(RUNNING, tabledeck, clickhandles, tablehandles, played_cards, play
                     for i in range(len(clickhandles)):
                         if clickhandles[i][0].collidepoint(mouse_pos):
                             clicked = (clickhandles[i][1], clickhandles[i][2])
-                            print(clicked)
                             clicked_card_int = int(Handlers().rank_integer(clicked[0]))
                             clicked_card_suit = clicked[1]
                     if played_cards == 0:

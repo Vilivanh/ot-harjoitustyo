@@ -3,6 +3,7 @@ import pygame as pygame
 from constants import *
 from game_loop import game_loop
 from rules import rules_screen
+players_number = 6
 class StartMethods(object):
     def __init__(self):
         pygame.init()
@@ -63,7 +64,7 @@ if __name__ == '__main__':
                 mouse_pos = event.pos
                 for i in range(len(tableclicks)):
                     if tableclicks[0].collidepoint(mouse_pos):
-                        game_loop(True, [], [], [], 0, 6, False)
+                        game_loop(True, [], [], [], 0, players_number, False)
                     elif tableclicks[1].collidepoint(mouse_pos):
                         rules_screen(True)
                         
