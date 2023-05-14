@@ -8,6 +8,10 @@ Norri on korttipeli, jossa pelaajan tehtävä on päästä korteistaan eroon. Pe
 
 [Release](https://github.com/Vilivanh/ot-harjoitustyo/releases/tag/viikko5)
 
+### LOPPULAUTUKSEN RELEASE
+
+[Release](https://github.com/Vilivanh/ot-harjoitustyo/releases/tag/Loppupalautus)
+
 #### Ohjelman käynnistäminen
 
 1. Asenna riippuvuudet komennolla poetry install
