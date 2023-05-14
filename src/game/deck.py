@@ -38,7 +38,7 @@ class Hand(Deck):
     def display_cards(self):
         for card in self.cards:
             rank, suit = card[0], card[1]
-            image_scaled = CardHandlers.card_image_scaler(rank, suit)           
+            image_scaled = CardHandlers().card_image_scaler(rank, suit)           
             if image_scaled not in self.card_img:
                 self.card_img.append(image_scaled)
         

@@ -8,20 +8,18 @@ Norri-peli on korttipeli, jossa tarkoitus on päästä korteista eroon. Pelin vo
 
 Pelin aloittaessa sovelluksessa on tilastonäkymä ja mahdollisuus aloittaa peli. Pelin ollessa käynnissä pelaaja näkee omat korttinsa sekä toisten, tietokoneen ohjaamien pelaajien korttien määrän. 
 
-#### Tilanne viikon 4 jälkeen
+#### Tilanne viikon lopussa
 
-Peli toimii graafisesti. Aloitusnäkymä pitää vielä luoda ja säätää mahdollisuus valita pelaajien määrä.
+Peli toimii graafisesti. Aloitusnäkymä päivitetty, peli toimii nyt vain 6 pelaajalla..
 
 
 ### Pelin toiminta
 
 Koko pakka jaetaan pelaajille tasan. Pelaajan ollessa vuorossa, hänen tulee pelata pöytäpakkaan pöytäpakan päällimmäistä korttia suurempi kortti samaa maata. Mikäli pelaaja ei voi tai ei halua pelata korttia, hänen tulee nosta pöytäpakan pohjalla oleva kortti. Mikäli pöytäpakassa on yhtä paljon kortteja kuin pelaajia, pakka kaatuu ja pakassa olevat kortit poistuvat pelistä. Uuden pöytäpakan aloittaa pelaaja, joka löi edelliseen pakkaan viimeisen kortin ("kaatoi" edellisen pakan). Ristikakkonen aloittaa pelin. Ruutu on valttia, risti on kovaa. Tämä tarkoittaa sitä, että ristin päälle voi pelata vain ja ainoastaan ristiä. Ruutua voi pelata hertan ja padan päälle, ja pienin ruutu on suurempi kuin isoin pata tai hertta. Ensimmäisen kierroksen jälkeen pöytäpakan saa aloittaa millä tahansa kortilla. 
 
-####Tilanne viikon 4 jälkeen
+####Tilanne lopussa
 
--Perustoiminnot tehty
-Seuraavat tehtävät: mahdolliset animaatiot pakan kaatuessa, varmistus, että peli jatkuu vaikka (tietokoneen ohjaama) pelaaja poistuisi pelistä
-Yleistä kehitettävää: tietokoneen ohjaamien pelaajien logiikka pelistä
+Peli käynnistyy start-painikkeesta ja aloittaa suoraan 6 pelaajalla. 
 
 #### Esimerkkejä pelitilanteista
 

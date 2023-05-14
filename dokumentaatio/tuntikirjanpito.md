@@ -13,6 +13,9 @@
 | 13.4.  | 6    | sovelluskehittelyä
 | 15.4.  | 4    | sovelluskehitystä, käynnistyksen korjaaminen
 | 2.5.   | 1    | jatkokehityksen pohtimista
-
-|YHT     | 56   |
+| 9.5.   | 3    | työstämistä
+| 10.5.  | 2    | kehittelyä
+| 12.5.  | 4    | testien laatimista
+| 14.5.  | 8    | lopullisen palautuksen viimeistely
+|YHT     | 73   |
 
