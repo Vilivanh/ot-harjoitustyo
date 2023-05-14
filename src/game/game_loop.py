@@ -106,11 +106,9 @@ def game_loop(RUNNING, tabledeck, clickhandles, tablehandles, played_cards, play
                             TURNTOPLAY = "Player"
                         else:
                             TURNTOPLAY = f"Computer {NEXTTURN}"
-
                 else:
                     PLAYEDHAND = Computer_Hands[PlayingComputer]
                     CHOSEN = ComputerChoose().emptytable(PLAYEDHAND)
-                    print(f"this is {CHOSEN}")
                     if CHOSEN is not None:
                         tabledeck.append(CHOSEN)
                         Computer_Hands[PlayingComputer].remove(CHOSEN)

@@ -1,5 +1,5 @@
 import unittest
-from play import Play
+from game.play import Play
 
 
 class TestShuffle(unittest.TestCase):
@@ -21,8 +21,10 @@ class TestShuffle(unittest.TestCase):
         self.assertEqual(number_of_cards, 8)
     def test_get_right_amount_of_cards_for_computer_with_four_players(self):
         player, playing_computers = Play().deal(4)
+        number_of_player_cards = len(player)
         number_of_cards = len(playing_computers[1])
         self.assertEqual(number_of_cards, 13)
+        self.assertEqual(number_of_player_cards, 13)
 
 
 
